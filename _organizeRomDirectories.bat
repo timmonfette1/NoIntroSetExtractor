@@ -22,7 +22,7 @@
 :: There may be some files missed (like [BIOS] files) so you'll
 ::   have to manually categorize those yourself.
 ::
-:: This script is dependent on you have an install of 7-zip.
+:: This script is dependent on you having an install of 7-zip.
 :: You'll need to manually input the path to your install location for it.
 ::
 :: Please refer to the README for a bit more detail about where to place
