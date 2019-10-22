@@ -24,7 +24,7 @@ From here, all we need to do is setup the script to run (see below) and when it'
 All original zip archives will be deleted, all that will be left will be each individual ROM in it's appropriate, alphabetized, directory.
 
 ## Setup
-Before you can run this script, you'll need to have 7-Zip installed (honestly, if you're extracting files without 7-Zip, you're messing up any way).  You can find 7-Zip [on the official website](https://www.7-zip.org/).<br/><br/>
+Before you can run this script, you'll need to have 7-Zip installed (honestly, if you're extracting files without 7-Zip, you're messing up).  You can find 7-Zip [on the official website](https://www.7-zip.org/).<br/><br/>
 After installing 7-Zip if you don't already have it, there are 3 vairables you need to set yourself in the script to make it run successfully:
 ```
 SET SourceDir=
