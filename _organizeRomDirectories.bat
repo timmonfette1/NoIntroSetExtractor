@@ -35,7 +35,7 @@ SET Numbers=(0,1,2,3,4,5,6,7,8,9)
 SET SourceDir=.
 SET DestLetterDir=.
 SET DestNumDir=.\1
-SET SevenZipLocation=D:\programData\7-Zip\7z.exe
+SET SevenZipLocation=
 
 :: Build the directory structure
 MKDIR 1
