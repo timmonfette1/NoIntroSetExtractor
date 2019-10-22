@@ -1,5 +1,5 @@
 :: Author- Tim Monfette
-:: Date -  10/21/2019
+:: Date -  10/16/2019
 ::
 :: This script is an organizational tool for organizing files.
 :: This was designed to make it easy to extract ROMs from No-Intro-Sets
@@ -33,20 +33,20 @@
 SET Letters=(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z)
 SET Numbers=(0,1,2,3,4,5,6,7,8,9)
 SET SourceDir=
-SET DestLetterDir=
-SET DestNumDir=%SourceDir%\1
+SET DestDir=
+SET DestNumDir=%DestDir%\1
 SET SevenZipLocation=
 
 :: Build the directory structure
 MKDIR "%DestNumDir%"
-FOR %%A IN %Letters% DO MKDIR "%SourceDir%\%%~A"
+FOR %%A IN %Letters% DO MKDIR "%DestDir%\%%~A"
 
 :: Move the individual ROM archives to their alphabetical locations
-FOR %%A IN %Letters% DO MOVE "%SourceDir%\%%~A*.*" "%DestLetterDir%\%%~A\"
+FOR %%A IN %Letters% DO MOVE "%SourceDir%\%%~A*.*" "%DestDir%\%%~A\"
 FOR %%B IN %Numbers% DO MOVE "%SourceDir%\%%~B*.*" "%DestNumDir%\"
 
 :: For every directory we just created...
-FOR /d %%I IN ("%SourceDir%\*") DO (
+FOR /d %%I IN ("%DestDir%\*") DO (
 
   :: Enter the sub directory
   CD "%%I"
