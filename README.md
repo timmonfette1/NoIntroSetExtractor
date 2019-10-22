@@ -8,8 +8,20 @@ A No Intro Set is a set of ROMs collected by the No-Intro Group. The group exist
 **YOU WILL NOT FIND ANY ROMs HERE NOR WILL I INSTRUCT YOU ON HOW TO FIND THEM.**<br/>
 Do your own research, I promise you it's not that hard.
 
-## How Does It Work
-TO DO
+## How Does It Work?
+Say we download a No Intro Set for Atari 5200. It will start like this:
+
+![step1](https://github.com/timmonfette1/NoIntroSetExtractor/blob/master/READMEImages/Step1.png)
+
+Now, when we extract it, we will see that inside of it is each individual ROM in it's own archive:
+
+![step2](https://github.com/timmonfette1/NoIntroSetExtractor/blob/master/READMEImages/Step2.png)
+
+From here, all we need to do is setup the script to run (see below) and when it's done, this will be the result in the desired output directory:
+
+![step3](https://github.com/timmonfette1/NoIntroSetExtractor/blob/master/READMEImages/Step3.png)
+
+All original zip archives will be deleted, all that will be left will be each individual ROM in it's appropriate, alphabetized, directory.
 
 ## Setup
 Before you can run this script, you'll need to have 7-Zip installed (honestly, if you're extracting files without 7-Zip, you're messing up any way).  You can find 7-Zip [on the official website](https://www.7-zip.org/).<br/><br/>
@@ -19,12 +31,10 @@ SET SourceDir=
 SET DestDir=
 SET SevenZipLocation=
 ```
-<br/><br/>
 In order of appearance, these variables represent the following:
 - The directory containing all of the ROM archives in the No Intro Set
 - The directory you want to write all of the resulting folders to
 - The path to your 7-Zip exe
-<br/><br/>
 
 If I was to fill them out, they'd look like the following:<br/><br/>
 ```
@@ -32,7 +42,6 @@ SET SourceDir=.
 SET DestDir=.
 SET SevenZipLocation=D:\programData\7-Zip\7z.exe
 ```
-<br/><br/>
 I like to move the script to whatever directory I keep the ROMs in to prevent having to change these variables every time
 
 ## How to Use
