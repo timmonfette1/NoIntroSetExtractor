@@ -32,9 +32,9 @@
 :: Set some variables
 SET Letters=(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z)
 SET Numbers=(0,1,2,3,4,5,6,7,8,9)
-SET SourceDir=.
-SET DestLetterDir=.
-SET DestNumDir=.\1
+SET SourceDir=
+SET DestLetterDir=
+SET DestNumDir=%SourceDir%\1
 SET SevenZipLocation=
 
 :: Build the directory structure
