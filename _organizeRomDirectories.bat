@@ -1,5 +1,5 @@
 :: Author- Tim Monfette
-:: Date -  10/16/2019
+:: Date -  10/21/2019
 ::
 :: This script is an organizational tool for organizing files.
 :: This was designed to make it easy to extract ROMs from No-Intro-Sets
@@ -38,7 +38,7 @@ SET DestNumDir=%SourceDir%\1
 SET SevenZipLocation=
 
 :: Build the directory structure
-MKDIR 1
+MKDIR "%DestNumDir%"
 FOR %%A IN %Letters% DO MKDIR "%SourceDir%\%%~A"
 
 :: Move the individual ROM archives to their alphabetical locations
